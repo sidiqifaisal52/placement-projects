@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Step Towards Good Health And Well-Being</title>
+    <!-- LINK TO GLOBAL CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef7f2;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px;
+        }
+
+        header img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin: 30px 0;
+        }
+
+        .sort-box {
+            margin: 15px 0;
+        }
+
+        .program-card,
+        .review-card {
+            background-color: white;
+            border: 2px solid #2e8b57;
+            border-radius: 10px;
+            margin: 15px auto;
+            padding: 15px;
+            width: 70%;
+            transition: 0.3s;
+        }
+
+        .program-card:hover,
+        .review-card:hover {
+            transform: scale(1.02);
+            background-color: #e6f5ec;
+        }
+
+        button,
+        input[type="submit"] {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover,
+        input[type="submit"]:hover {
+            background-color: #1f6b43;
+        }
+
+        form {
+            background-color: white;
+            border: 2px solid #2e8b57;
+            border-radius: 10px;
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #2e8b57;
+            padding: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #charCount {
+            font-size: 14px;
+            color: #444;
+        }
+
+        #formMessage {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .see-more {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .see-more:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo/logo.png" alt="Website logo" width="80">
+        <h1>Step Towards Good Health And Well-Being</h1>
+        <h2>Feedback and Program Directory</h2>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Health and Well-being Programs</h2>
+
+            <div class="sort-box">
+                <label for="sortPrograms"><strong>Sort Programs:</strong></label>
+                <select id="sortPrograms" name="sortPrograms">
+                    <option>Most Popular</option>
+                    <option>Nearest</option>
+                    <option>Student Friendly</option>
+                </select>
+            </div>
+
+            <div class="program-card">
+                <h3>Mental Health Support</h3>
+                <p>This program helps students manage stress, anxiety, and emotional well-being.</p>
+                <button type="button">Learn More</button>
+            </div>
+
+            <div class="program-card">
+                <h3>Fitness and Exercise Club</h3>
+                <p>This club encourages students to stay active through regular exercise and group activities.</p>
+                <button type="button">Join Now</button>
+            </div>
+
+            <div class="program-card">
+                <h3>Healthy Eating Campaign</h3>
+                <p>This campaign promotes balanced diets and healthy food choices for students.</p>
+                <button type="button">Read More</button>
+            </div>
+
+            <div class="program-card">
+                <h3>Well-being Workshops</h3>
+                <p>These workshops teach students practical ways to improve sleep, reduce stress, and stay positive.</p>
+                <button type="button">Explore</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Ratings and Reviews</h2>
+            <p><strong>8.6/10 Excellent</strong> based on 124 reviews</p>
+
+            <div class="review-card">
+                <h3>Very helpful service</h3>
+                <p>The mental health support sessions were very useful and easy to access.</p>
+                <p><strong>Ali</strong> - 20 March 2026 - Rating: 9/10</p>
+                <p><a href="#" class="see-more">See more</a></p>
+            </div>
+
+            <div class="review-card">
+                <h3>Good student activities</h3>
+                <p>The fitness club helped me stay motivated and active during the semester.</p>
+                <p><strong>Sara</strong> - 18 March 2026 - Rating: 8/10</p>
+                <p><a href="#" class="see-more">See more</a></p>
+            </div>
+
+            <div class="review-card">
+                <h3>Useful advice</h3>
+                <p>The workshops gave me practical tips for stress and time management.</p>
+                <p><strong>Hassan</strong> - 15 March 2026 - Rating: 9/10</p>
+                <p><a href="#" class="see-more">See more</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Send Us Your Feedback</h2>
+
+            <form id="feedbackForm">
+
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="phone">Telephone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback Details</legend>
+
+                    <label for="message">Comment:</label>
+                    <textarea id="message" name="message" maxlength="200"></textarea>
+                    <p id="charCount">Characters left: 200</p>
+
+                    <label for="program">Choose a Program:</label>
+                    <select id="program" name="program">
+                        <option value="">-- Select a program --</option>
+                        <option value="Mental Health Support">Mental Health Support</option>
+                        <option value="Fitness and Exercise Club">Fitness and Exercise Club</option>
+                        <option value="Healthy Eating Campaign">Healthy Eating Campaign</option>
+                        <option value="Well-being Workshops">Well-being Workshops</option>
+                    </select>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="datetime">Preferred Contact Time:</label>
+                    <input type="datetime-local" id="datetime" name="datetime">
+                </fieldset>
+
+                <p id="formMessage"></p>
+
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="pageEditor_ST3.html">Page Editor</a> |
+            <a href="validation_ST3.html">Validation</a>
+        </p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("feedbackForm");
+        const message = document.getElementById("message");
+        const charCount = document.getElementById("charCount");
+        const formMessage = document.getElementById("formMessage");
+
+        message.addEventListener("input", function () {
+            let remaining = 200 - message.value.length;
+            charCount.textContent = "Characters left: " + remaining;
+        });
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const fullname = document.getElementById("fullname").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const program = document.getElementById("program").value;
+
+            if (fullname === "" || email === "" || program === "") {
+                formMessage.textContent = "Please fill in Full Name, Email, and Program.";
+                formMessage.style.color = "red";
+            } else {
+                formMessage.textContent = "Thank you for your feedback!";
+                formMessage.style.color = "green";
+                form.reset();
+                charCount.textContent = "Characters left: 200";
+            }
+        });
+    </script>
+
+</body>
+</html>
